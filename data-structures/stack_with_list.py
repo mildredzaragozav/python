@@ -25,8 +25,8 @@ class Stack:
         return len(self.stack) == 0 
 
     def print(self):
-        print(self.stack)
-        
+        print(self.stack[::-1])
+
         
 my_stack = Stack()
 
