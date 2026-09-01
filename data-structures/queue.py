@@ -45,16 +45,19 @@ class Queue:
             return None
 
         return self.front.value
+
+    def size(self):
+        return self.length
     
     def is_empty(self):
         return self.length == 0
 
     def print(self):
-            temp = self.front
-            while temp is not None:
-                print(temp.value, end=" -> ")
-                temp = temp.next
-            print("None") 
+        temp = self.front
+        while temp is not None:
+            print(temp.value, end=" -> ")
+            temp = temp.next
+        print("None") 
 
 
 my_queue = Queue(1)
@@ -62,7 +65,7 @@ my_queue.enqueue(2)
 my_queue.enqueue(3)
 my_queue.print()
 print("Peek: ", my_queue.peek())
-print("Length: ", my_queue.length)
+print("Length: ", my_queue.size())
 print("isEmpty ? : ", my_queue.is_empty(), "\n")
 
 my_queue.dequeue()
@@ -70,7 +73,7 @@ my_queue.dequeue()
 my_queue.dequeue()
 my_queue.print()
 print("Peek: ", my_queue.peek())
-print("Length: ", my_queue.length())
+print("Length: ", my_queue.size())
 print("isEmpty ? : ", my_queue.is_empty(), "\n")
 
 my_queue.dequeue()
@@ -78,6 +81,6 @@ my_queue.enqueue(4)
 my_queue.enqueue(5)
 my_queue.print()
 print("Peek: ", my_queue.peek())
-print("Length: ", my_queue.length())
+print("Length: ", my_queue.size())
 print("isEmpty ? : ", my_queue.is_empty(), "\n")
 
