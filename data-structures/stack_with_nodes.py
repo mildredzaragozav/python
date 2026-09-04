@@ -1,13 +1,7 @@
 """
     A stack is a data structure where elements are inserted and removed according to the LIFO principle.
-    This is an implementation of a stack using a nodes. 
+    This is an implementation of a stack using nodes. 
 """
-
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
-
 
 class Stack:
     def __init__(self, value):
@@ -46,8 +40,12 @@ class Stack:
         while temp is not None:
             print(temp.value, end=" -> ")
             temp = temp.next
-        print("None") 
+        print("None")
 
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
 
 my_stack = Stack(10)
 my_stack.push(20)

@@ -3,11 +3,6 @@
     This is an implementation of a Queue using a linked list. 
 """
 
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
-
 class Queue:
     def __init__(self, value):
         new_node = Node(value)
@@ -59,6 +54,10 @@ class Queue:
             temp = temp.next
         print("None") 
 
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
 
 my_queue = Queue(1)
 my_queue.enqueue(2)

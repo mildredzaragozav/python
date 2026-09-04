@@ -3,12 +3,6 @@
     This is an implementation of deque using a doubly linked list.
 '''
 
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
-        self.prev = None
-
 class Deque:
     def __init__(self, value):
         new_node = Node(value)
@@ -112,6 +106,12 @@ class Deque:
             output.append(str(current.value))
             current = current.prev
         print(" <-> ".join(output))
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+        self.prev = None
 
 
 my_deque = Deque(10)
