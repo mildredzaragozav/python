@@ -1,6 +1,15 @@
 """
     A Queue is a linear data structure that operates according to the FIFO principle.
-    This is an implementation of a Queue using a linked list. 
+    This is linked-list-based implementation of a Queue.
+
+    Available methods:
+        __init__(value): Initializes the queue with a starting value.
+        enqueue(value):  Adds a new value to the back of the queue.
+        dequeue():       Removes and returns the value from the front of the queue.
+        peek():          Returns the front value without removing it.
+        size():          Returns the total number of elements in the queue.
+        is_empty():      Returns True if the queue is empty, otherwise False.
+        print():         Prints the queue.
 """
 
 class Queue:

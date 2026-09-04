@@ -4,12 +4,12 @@
     
     Available methods:
         __init__(value): Initializes the stack with a specified value.
-        push(value): Pushes a new value onto the top of the stack.
-        pop(): Pops and returns the top value off the stack.
-        peek(): Returns the top value without removing it
-        size(): Returns the total number of elements in the stack.
-        is_empty(): Returns True if the stack is empty, otherwise False.
-        print(): Prints the stack.
+        push(value):     Pushes a new value onto the top of the stack.
+        pop():           Pops and returns the top value off the stack.
+        peek():          Returns the top value without removing it
+        size():          Returns the total number of elements in the stack.
+        is_empty():      Returns True if the stack is empty, otherwise False.
+        print():         Prints the stack.
 """
 
 class Stack:
